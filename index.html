@@ -52,7 +52,7 @@
                             <h3 class="hello">Hello, my name is <span class="name">Omkar Sathe</span></h3>
                             <h3 class="my-profession">I'm a <span class="typing"></span></h3>
                             <p>I'm a Full Stack Java Developer. Expertise is to create and design website, Java applications and many more...</p>
-                            <a href="https://drive.google.com/file/d/1Rsqix8TV8dQ9tRVgVB7YzIM2JpMofo3i/view?usp=sharing" class="btn ">Download CV</a>
+                            <a href="https://drive.google.com/file/d/1e7bijwpq-Aa4yd_4LJTCgOCw0k0SzylE/view?usp=sharing" class="btn " target="_blank">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/my image.jpg" alt="">
@@ -84,13 +84,13 @@
                                             <p>Birthday : <span>24 Dec 1997</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Age : <span>25</span></p>
+                                            <p>Age : <span id="age"></span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Website :  <span>portfolioomkar.netlify.app</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Email : <span>satheomkar143@gmail.com</span></p>
+                                            <p>Email : <span>omkarsathe.official@gmail.com</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Degree: <span>Mechanical Engineer</span></p>
@@ -129,7 +129,7 @@
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
-                                            <h5>Jquery</h5>
+                                            <h5>Java Spring Boot</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 85%;"></div>
                                                 <!-- <div class="skill-percent">96%</div> -->
@@ -157,9 +157,9 @@
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
-                                            <h5>ExpressJS</h5>
+                                            <h5>ReactJS</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 75%;"></div>
+                                                <div class="progress-in" style="width: 85%;"></div>
                                                 <!-- <div class="skill-percent">76%</div> -->
                                             </div>
                                         </div>
@@ -520,7 +520,7 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <a href="https://github.com/satheomkar143/oneMoreBrick" target="_blank">
+                                    <a href="https://github.com/satheomkar24/oneMoreBrick" target="_blank">
 
                                         <img src="images/portfolio/brick.png" alt="">
                                     </a>
@@ -532,7 +532,7 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <a href="https://github.com/satheomkar143/JavaQuizApp" target="_blank">
+                                    <a href="https://github.com/satheomkar24/JavaQuizApp" target="_blank">
 
                                         <img src="images/portfolio/exam.png" alt="">
                                     </a>
@@ -559,7 +559,9 @@
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <h4>Call Us On</h4>
-                            <p>+91 705 891 9412</p>
+                            <a href="tel:7058919412">
+                                <p> +91 705 891 9412 </p>
+                            </a>
                         </div>
                         <!-- ---------contact info item end--------- -->
                         <!-- ---------contact info item start--------- -->
@@ -573,7 +575,9 @@
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
                             <h4>Email</h4>
-                            <p>satheomkar143@gmail.com</p>
+                            <a href="mailto:omkarsathe.official@gmail.com">
+                                <p>omkarsathe.official@gmail.com</p>
+                            </a>
                         </div>
                         <!-- ---------contact info item end--------- -->
                         <!-- ---------contact info item start--------- -->
@@ -584,10 +588,10 @@
                         </div>
                         <!-- ---------contact info item end--------- -->
                     </div>
-                    <h3 class="contact-title padd-15">SEND ME AN MAIL</h3>
+                    <!-- <h3 class="contact-title padd-15">SEND ME AN MAIL</h3> -->
                     <!-- <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4> -->
                     <!-- ----------contact-form----------- -->
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="contact-form padd-15">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
@@ -621,7 +625,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <!-- --------- contact section end--------- -->
@@ -654,6 +658,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
+    <script>
+        const birthYear = 1997;
+        const currentYear = new Date().getFullYear();
+        document.getElementById("age").textContent = currentYear - birthYear;
+    </script>
 </body>
 </html>
 
